@@ -1,0 +1,109 @@
+name: Branch Protection - User Specific Push
+
+on:
+  push:
+    branches:
+      - '**'  # Aplica a todas las ramas
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  check-user-branch-access:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check user branch permissions
+        env:
+          BRANCH_NAME: ${{ github.ref_name }}
+          PUSH_USER: ${{ github.actor }}
+        run: |
+          echo "📍 Ramas permitidas por usuario:"
+          echo "  angelgoat438 -> rama/angel, angel, feature/angel"
+          echo "  migueljdlt -> rama/miguel, miguel, feature/miguel"
+          echo "  rebecadiazmontenegro -> rama/rebeca, rebeca, feature/rebeca"
+          echo "  rizzijp -> rama/juanp, juanp, feature/juanp"
+          echo ""
+          echo "🔍 Verificando push de: $PUSH_USER"
+          echo "🎯 Rama destino: $BRANCH_NAME"
+          echo ""
+
+          # Convertir nombre de usuario a formato de rama permitida
+          case "$PUSH_USER" in
+            "angelgoat438")
+              ALLOWED_BRANCHES="angel rama/angel feature/angel"
+              USER_NAME="angel"
+              ;;
+            "migueljdlt")
+              ALLOWED_BRANCHES="miguel rama/miguel feature/miguel"
+              USER_NAME="miguel"
+              ;;
+            "rebecadiazmontenegro")
+              ALLOWED_BRANCHES="rebeca rama/rebeca feature/rebeca"
+              USER_NAME="rebeca"
+              ;;
+            "rizzijp")
+              ALLOWED_BRANCHES="juanp rama/juanp feature/juanp"
+              USER_NAME="juanp"
+              ;;
+            *)
+              # Usuario desconocido
+              ALLOWED_BRANCHES=""
+              USER_NAME="desconocido"
+              ;;
+          esac
+
+          # Si la rama es main, solo permitir a administrador
+          if [[ "$BRANCH_NAME" == "main" ]]; then
+            if [[ "$PUSH_USER" == "FabsGMartin" ]]; then
+              echo "✅ Push a main permitido (administrador: @FabsGMartin)"
+              exit 0
+            else
+              echo "❌ ERROR: No tienes permisos para hacer push a main"
+              echo "   Solo el administrador @FabsGMartin puede hacer push a main"
+              exit 1
+            fi
+          fi
+
+          # Verificar si es el administrador
+          if [[ "$PUSH_USER" == "FabsGMartin" ]]; then
+            echo "✅ Push permitido: Administrador puede acceder a todas las ramas"
+            exit 0
+          fi
+
+          # Verificar si el usuario tiene ramas permitidas
+          if [[ -z "$ALLOWED_BRANCHES" ]]; then
+            echo "❌ ERROR: Usuario $PUSH_USER no está autorizado en este repositorio"
+            echo "   Usuarios autorizados: angelgoat438, migueljdlt, rebecadiazmontenegro, rizzijp"
+            exit 1
+          fi
+
+          # Verificar si la rama está en la lista de ramas permitidas
+          ALLOWED=false
+          for allowed_branch in $ALLOWED_BRANCHES; do
+            if [[ "$BRANCH_NAME" == "$allowed_branch" ]] || [[ "$BRANCH_NAME" == *"$USER_NAME"* ]]; then
+              ALLOWED=true
+              break
+            fi
+          done
+
+          if [[ "$ALLOWED" == "true" ]]; then
+            echo "✅ Push permitido: Ramas permitidas para @$USER_NAME"
+          else
+            echo "❌ ERROR: Usuario $PUSH_USER no puede hacer push a la rama $BRANCH_NAME"
+            echo "   Ramas permitidas para @$USER_NAME: $ALLOWED_BRANCHES"
+            echo "   Rama actual: $BRANCH_NAME"
+            exit 1
+          fi
+
+      - name: Create issue if unauthorized push detected
+        if: failure()
+        env:
+          BRANCH_NAME: ${{ github.ref_name }}
+          PUSH_USER: ${{ github.actor }}
+        run: |
+          gh issue create \
+            --title "🚫 Push no autorizado a rama $BRANCH_NAME" \
+            --body "Usuario: @$PUSH_USER intentó hacer push a la rama \`$BRANCH_NAME\` sin autorización. Favor de revisar las ramas asignadas." \
+            --label "security" || true
