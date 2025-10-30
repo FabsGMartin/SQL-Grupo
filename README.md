@@ -120,7 +120,7 @@ Bootcamps (1) — (N) Alumnos: un bootcamp tiene muchos alumnos.
 
 Bootcamps (1) — (N) Profesores: un bootcamp tiene muchos profesores.
  
-## 8. Alumnos:
+### 8. Alumnos:
 Tabla de registro de estudiantes.
 
 Columnas
