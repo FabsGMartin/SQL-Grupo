@@ -8,6 +8,8 @@
 - Fabian González Martín
 - Rebeca Díaz-Montenegro Sánchez
 
+## 🖥️ Introducción
+El proyecto consiste en diseñar e implementar una base de datos en PostgreSQL. Se creará un modelo E/R para definir entidades, atributos y relaciones, que luego se convertirá en un modelo lógico con tablas, claves primarias y foráneas. Se realizará la normalización de datos para evitar redundancias y garantizar integridad, y finalmente se creará la base de datos y se alojará en un servidor accesible desde aplicaciones externas.
 
 ## 📄 Tareas que realizar
 
@@ -20,8 +22,18 @@
 4. **Creación de la Base de Datos**: Utilizando un sistema de gestión de bases de datos de PostgreSQL, crear la base de datos y las tablas necesarias según el modelo lógico. Crear las queries necesarias para crear las tablas e ingestar los datos. Habrá que alojar en algún servidor vuestras bases de datos para poder acceder desde aplicaciones de terceros.
 Algún servicio gratis de postgreSQL:
 
+## 📑 Modelo Entidad-Relación (E/R)
+
+
+
+## 📉 Modelo Lógico de la Base de Datos
+![modelo_lógico](./assets/modelo%20logico.svg)
+
 ## 🛠️ Herramientas utilizadas
 
  - Render
  - PgAdmin4
- - SQL
+ - postgreSQL
+ - Python
+
+
