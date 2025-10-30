@@ -4,8 +4,8 @@
 
 - Miguel Jiménez De La Torre
 - Juan Pablo Rizzi 
-- Angel Gómez Alonso
-- Fabian González Martín
+- Ángel Gómez Alonso
+- Fabián González Martín
 - Rebeca Díaz-Montenegro Sánchez
 
 ## 🖥️ Introducción
