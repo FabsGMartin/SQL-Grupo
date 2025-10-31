@@ -23,36 +23,66 @@
 
 </div>
 
-## Contributors
+## Participantes
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
-<table>
-  <tbody>
-    <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/rizzijp"><img src="https://avatars.githubusercontent.com/u/154839703?v=4?s=100" width="100px;" alt="rizzijp"/><br /><sub><b>rizzijp</b></sub></a><br /><a href="#code-rizzijp" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/FabsGMartin"><img src="https://avatars.githubusercontent.com/u/61802930?v=4?s=100" width="100px;" alt="Fabs GM"/><br /><sub><b>Fabs GM</b></sub></a><br /><a href="#code-FabsGMartin" title="Code">💻</a> <a href="#mentoring-FabsGMartin" title="Mentoring">🧑‍🏫</a> <a href="#review-FabsGMartin" title="Reviewed Pull Requests">👀</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/angelgoat438"><img src="https://avatars.githubusercontent.com/u/226554634?v=4?s=100" width="100px;" alt="angelgoat438"/><br /><sub><b>angelgoat438</b></sub></a><br /><a href="#code-angelgoat438" title="Code">💻</a> <a href="#ideas-angelgoat438" title="Ideas, Planning, & Feedback">🤔</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/migueljdlt"><img src="https://avatars.githubusercontent.com/u/233769794?v=4?s=100" width="100px;" alt="migueljdlt"/><br /><sub><b>migueljdlt</b></sub></a><br /><a href="#code-migueljdlt" title="Code">💻</a> <a href="#infra-migueljdlt" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
-    </tr>
-  </tbody>
-</table>
+<div align="center">
+  <table>
+    <tbody>
+      <tr>
+        <td align="center" valign="top" width="20%">
+          <a href="https://github.com/rizzijp">
+            <img src="https://avatars.githubusercontent.com/u/154839703?v=4?s=100" width="100px;" alt="rizzijp"/><br />
+            <sub><b>rizzijp</b></sub>
+          </a><br />
+          <a href="#code-rizzijp" title="Code">💻</a>
+        </td>
+        <td align="center" valign="top" width="20%">
+          <a href="https://github.com/FabsGMartin">
+            <img src="https://avatars.githubusercontent.com/u/61802930?v=4?s=100" width="100px;" alt="Fabs GM"/><br />
+            <sub><b>Fabs GM</b></sub>
+          </a><br />
+          <a href="#code-FabsGMartin" title="Code">💻</a> 
+          <a href="#mentoring-FabsGMartin" title="Mentoring">🧑‍🏫</a> 
+          <a href="#review-FabsGMartin" title="Reviewed Pull Requests">👀</a>
+        </td>
+        <td align="center" valign="top" width="20%">
+          <a href="https://github.com/angelgoat438">
+            <img src="https://avatars.githubusercontent.com/u/226554634?v=4?s=100" width="100px;" alt="angelgoat438"/><br />
+            <sub><b>angelgoat438</b></sub>
+          </a><br />
+          <a href="#code-angelgoat438" title="Code">💻</a> 
+          <a href="#ideas-angelgoat438" title="Ideas, Planning, & Feedback">🤔</a>
+        </td>
+        <td align="center" valign="top" width="20%">
+          <a href="https://github.com/migueljdlt">
+            <img src="https://avatars.githubusercontent.com/u/233769794?v=4?s=100" width="100px;" alt="migueljdlt"/><br />
+            <sub><b>migueljdlt</b></sub>
+          </a><br />
+          <a href="#code-migueljdlt" title="Code">💻</a> 
+          <a href="#infra-migueljdlt" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a>
+        </td>
+        <td align="center" valign="top" width="20%">
+          <a href="https://github.com/rebecadiazmontenegro">
+            <img src="https://avatars.githubusercontent.com/rebecadiazmontenegro?v=4&s=100" width="100px;" alt="rebecadiazmontenegro"/><br />
+            <sub><b>rebecadiazmontenegro</b></sub>
+          </a><br />
+          <a href="#code-rebecadiazmontenegro" title="Code">💻</a> 
+          <a href="#content-rebecadiazmontenegro" title="Content">🖋️</a> 
+          <a href="#design-rebecadiazmontenegro" title="Design">🎨</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-## 👤 Participantes
-
-
-
-- Miguel Jiménez De La Torre
-- Juan Pablo Rizzi
-- Ángel Gómez Alonso
-- Fabián González Martín
-- Rebeca Díaz-Montenegro Sánchez
 
 ## 📖 Índice
 
