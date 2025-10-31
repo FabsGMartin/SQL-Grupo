@@ -32,6 +32,7 @@
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/rizzijp"><img src="https://avatars.githubusercontent.com/u/154839703?v=4?s=100" width="100px;" alt="rizzijp"/><br /><sub><b>rizzijp</b></sub></a><br /><a href="#code-rizzijp" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/FabsGMartin"><img src="https://avatars.githubusercontent.com/u/61802930?v=4?s=100" width="100px;" alt="Fabs GM"/><br /><sub><b>Fabs GM</b></sub></a><br /><a href="#code-FabsGMartin" title="Code">💻</a> <a href="#mentoring-FabsGMartin" title="Mentoring">🧑‍🏫</a> <a href="#review-FabsGMartin" title="Reviewed Pull Requests">👀</a></td>
     </tr>
   </tbody>
 </table>
