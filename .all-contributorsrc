@@ -1,4 +1,21 @@
 {
   "projectName": "SQL-Grupo",
-  "projectOwner": "FabsGMartin"
+  "projectOwner": "FabsGMartin",
+  "files": [
+    "README.md"
+  ],
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributorsPerLine": 7,
+  "contributors": [
+    {
+      "login": "rebecadiazmontenegro",
+      "name": "Rebeca Díaz-Montenegro Sánchez",
+      "avatar_url": "https://avatars.githubusercontent.com/u/229917697?v=4",
+      "profile": "https://github.com/rebecadiazmontenegro",
+      "contributions": [
+        "code"
+      ]
+    }
+  ]
 }
