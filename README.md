@@ -12,7 +12,7 @@
 
 ![GitHub license](https://img.shields.io/github/license/FabsGMartin/SQL-Grupo?style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/FabsGMartin/SQL-Grupo?style=for-the-badge)
-![GitHub contributors](https://img.shields.io/github/contributors/FabsGMartin/SQL-Grupo?style=for-the-badge)
+[![All Contributors](https://img.shields.io/github/all-contributors/FabsGMartin/SQL-Grupo?color=ee8449&style=for-the-badge)](#participantes)
 ![GitHub repo size](https://img.shields.io/github/repo-size/FabsGMartin/SQL-Grupo?style=for-the-badge)
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/FabsGMartin/SQL-Grupo/branch-protection.yml?branch=main&style=for-the-badge)
 
